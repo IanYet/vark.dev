@@ -18,11 +18,27 @@ module.exports = {
                 loader: 'babel-loader',
             },
             {
-                test: /\.css$/,
+                test: /\.module\.css$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader:'css-loader',
+                        options: {
+                            modules: {
+                                localIdentName: "[hash:base64:8]_[name]_[local]",
+                            },
+                        }
+                    }
+                ],
+                include: __dirname + '/src'
+            },
+            {
+                test: /(?<!\.module)\.css$/,
                 use: [
                     'style-loader',
                     'css-loader'
                 ],
+                include: __dirname + '/src'
             },
             {
                 test: /\.(png|jpg|gif|svg)$/i,
@@ -54,7 +70,7 @@ module.exports = {
                     name: 'lib',
                     test: /[\\/]node_modules[\\/]/,
                     chunks: 'all',
-                    // reuseExistingChunk: true
+                    reuseExistingChunk: true
                 },
             },
         },

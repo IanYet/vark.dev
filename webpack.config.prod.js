@@ -20,12 +20,28 @@ module.exports = {
                 loader: 'babel-loader',
             },
             {
-                test: /\.css$/,
+                test: /\.module\.css$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
                     },
-                    'css-loader',
+                    {
+                        loader:'css-loader',
+                        options: {
+                            modules: {
+                                localIdentName: "[hash:base64:8]_[name]_[local]",
+                            },
+                        }
+                    }
+                ],
+            },
+            {
+                test: /(?<!\.module)\.css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    'css-loader'
                 ],
             },
             {
