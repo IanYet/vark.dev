@@ -4,7 +4,7 @@
     "description": "https://vark.dev",
     "scripts": {
         "build": "webpack --config webpack.config.prod.js",
-        "server": "webpack-dev-server --config webpack.config.dev.js --hot --open 'google chrome' --color"
+        "start": "webpack-dev-server --config webpack.config.dev.js --hot --open 'google chrome' --color"
     },
     "repository": {
         "type": "git",
@@ -35,6 +35,7 @@
     },
     "dependencies": {
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "react-router": "^5.1.2"
     }
 }
