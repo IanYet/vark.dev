@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import imgUrl from './assets/bg.jpg'
+
+import Start from './Start'
 
 function App() {
     return (
         <div className='app'>
-            react A
-            {/* <img src={imgUrl} /> */}
+            <Start />
         </div>
     )
 }
