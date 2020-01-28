@@ -2,17 +2,26 @@
     src: url(../assets/title-ExLightCond.otf);
     font-family: 'title-ExLightCond';
 }
-.title-container {
+
+.start-container {
     font-family: 'title-ExLightCond', Cambria, Cochin, Georgia, Times,
         'Times New Roman', serif;
 
-    height: 100vh;
+    position: relative;
     width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.title-container {
+    position: absolute;
 
+    right: 0;
     bottom: 0;
+
     box-sizing: border-box;
     padding-right: 20vw;
-    padding-bottom: 25vh;
+    padding-bottom: 50vh;
     text-align: right;
     user-select: none;
 }
@@ -22,5 +31,5 @@
     line-height: 4rem;
     letter-spacing: 1rem;
     margin-right: -1rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
