@@ -3,11 +3,11 @@ html {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #fcfcfc;
+    background-color: #fffef9;
 }
 
 body {
     margin: 0;
     padding: 0;
-    color: #404040;
+    color: #57585c;
 }
