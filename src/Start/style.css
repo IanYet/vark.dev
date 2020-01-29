@@ -2,7 +2,10 @@
     src: url(../assets/title-ExLightCond.otf);
     font-family: 'title-ExLightCond';
 }
-
+@font-face {
+    src: url(../assets/titlel-UltLightCom.otf);
+    font-family: 'title-ExLightCom';
+}
 .start-container {
     font-family: 'title-ExLightCond', Cambria, Cochin, Georgia, Times,
         'Times New Roman', serif;
@@ -11,36 +14,98 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    user-select: none;
 }
-.title-container {
+.unit {
     position: absolute;
     box-sizing: border-box;
 }
-.p1{
-    right: 20vw;
-    bottom: 50vh;
+.hide {
+    opacity: 0;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.col > span {
+    margin-bottom: 1rem;
+}
+.big {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
     text-align: right;
 }
-.p2{
+.mid {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: right;
+}
+.lit{
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 1rem;
+    height: 1rem;
+    text-align: right;
+}
+
+.p1 {
+    right: 20vw;
+    bottom: 50vh;
+    z-index: 10;
+}
+.p2 {
     right: 20vw;
     top: 50vh;
-    text-align: right;
+    opacity: 0;
+    z-index: 10;
+}
+.p3 {
+    left: 0;
+    top: calc(100vh + 24rem);
+    width: calc(80vw + 1rem);
+    height: 100vh;
+    background: #99a89e;
+    z-index: 8;
+}
+.p4 {
+    z-index: 9;
+    right: 20vw;
+    top: 20vh;
+    color: #fffef9;
+}
+.p5 {
+    z-index: 9;
+    right: calc(20vw + 8rem);
+    top: calc(50vh + 8rem);
+    opacity: 0;
+}
+.p6 {
+    z-index: 9;
+    right: calc(20vw + 6rem);
+    top: calc(50vh + 8rem);
     opacity: 0;
 }
 
-.title {
-    font-size: 4rem;
-    line-height: 4rem;
-    letter-spacing: 1rem;
-    margin-right: -1rem;
-    margin-bottom: 2rem;
-    user-select: none;
+.p7{
+    left: calc(50vw - 6rem);
+    z-index: 7;
+    color: #99a89e;
+    top: calc(50vh - 12rem);
 }
-.subtitle{
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: .3rem;
-    margin-right: -0.3rem;
-    margin-bottom: 2rem;
-    user-select: none;
+.p7 .row{
+    justify-content: center;
+}
+.p7 span{
+    text-align: center;
 }
