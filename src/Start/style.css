@@ -2,10 +2,6 @@
     src: url(../assets/title-ExLightCond.otf);
     font-family: 'title-ExLightCond';
 }
-@font-face {
-    src: url(../assets/titlel-UltLightCom.otf);
-    font-family: 'title-ExLightCom';
-}
 .start-container {
     font-family: 'title-ExLightCond', Cambria, Cochin, Georgia, Times,
         'Times New Roman', serif;
