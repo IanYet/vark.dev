@@ -32,8 +32,8 @@ function Start() {
     return (
         <div className="start-container" onWheel={handleScroll}>
             <div className="title-container p1" ref={ref1}>
-                <div className="title one">你好</div>
-                <div className="title two">我是一日渚</div>
+                <div className="title">你好</div>
+                <div className="title">我是一日渚</div>
             </div>
             <div className="title-container p2" ref={ref2}>
                 <div className="subtitle">梦一日，雨一日，百年人非事如是</div>
