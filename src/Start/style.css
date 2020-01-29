@@ -10,20 +10,22 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .title-container {
     position: absolute;
-
-    right: 0;
-    bottom: 0;
-
     box-sizing: border-box;
-    padding-right: 20vw;
-    padding-bottom: 50vh;
+}
+.p1{
+    right: 20vw;
+    bottom: 50vh;
     text-align: right;
-    user-select: none;
+}
+.p2{
+    right: 20vw;
+    top: 50vh;
+    text-align: right;
+    opacity: 0;
 }
 
 .title {
@@ -31,5 +33,14 @@
     line-height: 4rem;
     letter-spacing: 1rem;
     margin-right: -1rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+.subtitle{
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: .3rem;
+    margin-right: -0.3rem;
+    margin-bottom: 2rem;
+    user-select: none;
 }
