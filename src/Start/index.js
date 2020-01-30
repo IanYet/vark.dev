@@ -175,9 +175,12 @@ function Start() {
 
             ref14.current.style.top = 100 * vh - ratio * 50 * vh + 'px'
         }
+        ref13.current.style.color = ''
         if (visualY >= h6) {
             const ratio = (visualY - h6) / (h7 - h6)
             ref15.current.style.opacity = 1 - ratio
+            ref13.current.style.color = `rgb(${107 - 30 * ratio}, ${122 -
+                34 * ratio},${140 - 48 * ratio})`
         }
     }
 
